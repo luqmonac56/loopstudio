@@ -3,11 +3,11 @@
         <div class=" flex gap-8 md:gap-4 flex-col items-center md:items-start">
             <div><img src="../assets/images/logo.svg" alt=""></div>
             <ul class="flex flex-col md:flex-row gap-6  ">
-                <li>Home</li>
-                <li>Home</li>
-                <li>Home</li>
-                <li>Home</li>
-                <li>Home</li>
+                <li>About</li>
+                <li>Careers</li>
+                <li>Events</li>
+                <li>Products</li>
+                <li>Support</li>
             </ul>
         </div>
         <div class="flex items-center md:items-end gap-4 flex-col">

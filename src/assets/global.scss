@@ -3,3 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+li{
+
+    &:hover{
+        border-bottom: 2px solid #ffffff;
+        cursor: pointer;
+        transition: all .3s ease-in;
+
+    }
+}

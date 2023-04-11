@@ -5,7 +5,7 @@
         </div>
         <div class=" text-center  md:w-[50%] md:max-w-[600px] bg-white ">
             <h2 class="text-3xl md:text-4xl lg:text-[3rem] mb-4 tracking-widest">THE LEADER IN INTERACTIVE VR</h2>
-            <P class=" leading-[1.8]">Lorem ipsum dolor sit amet consectetur ci. Laborum consequuntur error, eveniet sunt mollitia accusantium similique saepe quia ipsa alias iusto totam! Unde.</P>
+            <P class=" leading-[1.8] text-[#696969]">Lorem ipsum dolor sit amet consectetur ci. Laborum consequuntur error, eveniet sunt mollitia accusantium similique saepe quia ipsa alias iusto totam! Unde.</P>
         </div>
     </div>
 </template>

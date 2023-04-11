@@ -4,7 +4,7 @@
             <h2 class="text-center text-4xl">OUR CREATIONS</h2>
             <button  class="md:block hidden">SEE ALL</button>
         </div>
-        <div class="flex-gallery grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8 mb-8">
+        <div class="flex-gallery  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8 mb-8">
             <div class=" bg-[url('../assets/images/mobile/image-deep-earth.jpg')] md:bg-[url('../assets/images/desktop/image-deep-earth.jpg')]"><h2 class=" md:text-[2rem] w-[50%] text-[2rem] lg:text-[2.5rem]">Deep Earth</h2></div>
             <div class="bg-[url('../assets/images/mobile/image-night-arcade.jpg')] md:bg-[url('../assets/images/desktop/image-night-arcade.jpg')]"><h2 class=" w-[55%] text-[2rem]  md:text-[2rem] lg:text-[2.5rem] ">Night Arcade</h2></div>
             <div class="bg-[url('../assets/images/mobile/image-soccer-team.jpg')] md:bg-[url('../assets/images/desktop/image-soccer-team.jpg')]"><h2 class=" w-[55%] text-[2rem] md:text-[2rem] lg:text-[2.5rem] ">Soccer Team VR</h2></div>
@@ -33,6 +33,13 @@ button{
     border: 1px solid black;
     padding: .5rem 2.5rem;
     border-radius: 2px;
+
+    &:hover{
+        background: #000;
+        color: #fff;
+        transition: all .3s ease-in-out;
+
+    }
 }
 
 .flex-gallery{
