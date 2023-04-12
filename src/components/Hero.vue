@@ -6,7 +6,7 @@
             >
         <div class="hero relative md:h-[80vh] h-[100vh] text-white py-12 md:px-12 px-4">
             <nav class="  flex justify-between items-center" >
-                <img class="z-50 " src="../assets/images/logo.svg" alt="Logo">
+                <img class="logo z-50 " src="../assets/images/logo.svg" alt="Logo">
                 
                 <ul class=" gap-6 hidden md:flex navigation ">
                     <li>About</li>
@@ -48,24 +48,23 @@ export default {
         const tl = gsap.timeline()
 
         const beforeEnter = (el) =>{
-            el.style.transform = 'translateY(-100px)'
+            el.style.transform = 'translateX(-1000px)'
             el.style.opacity = 0
-            // ".experience".style.transition = 'translateY(-1000px)'
-
-            // tl.from(".experience", {
-            //     y:-1000,
-            //     opacity:0
-            // })
         }
 
         const enter = (el, done) =>{
 
             tl.to(el, {
-                duration:1,
-                y:0,
+                duration:2,
+                x:0,
                 opacity:1,
-                ease: "back.out(5)",
+                ease: "back.out(2)",
 
+            })
+
+            tl.from(".logo", {
+                scale: .3, 
+                duration: 1.5
             })
 
             tl.from("li",{
@@ -77,14 +76,13 @@ export default {
 
             tl.from(".experience", {
                 duration: 1,
-                y: 2000,
+                y: 1000,
                 opacity: 0,
-                ease: "bounce.out",
+                ease: "back.out(2)",
             })
-        } 
 
-        // tl.fromTo(".navigation", {x: -100},{rotation: 360, x: 100, duration: 3})
-        // gsap.to(".navigation", {rotation: 360, scale: 2, duration: 12})
+            
+        } 
 
 
         return {openMenu, beforeEnter, enter, tl}
